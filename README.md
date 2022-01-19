@@ -1,1 +1,1 @@
-Track_Your_Demon
+This project is an EPITA S2 Project
