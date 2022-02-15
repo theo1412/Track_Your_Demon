@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Théo/Selector/Scripts/CharacterSelect.cs">
+    <Files>
+      <File FileName="../../../Downloads/Mirror-Multiplayer-Tutorials-master/Assets/Tutorials/CharacterSelection/Scripts/PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Théo/Selector/Scripts/NewBehaviourScript.cs" />
+      <File FileName="Assets/Théo/Selector/Scripts/CharacterSelect.cs" Line="47" Column="1" />
+      <File FileName="Assets/Théo/Selector/Scripts/Character.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True">
+            <Node name="Assets" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a69e01f3-ec80-44eb-98e8-cf0a5ed45bff" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
