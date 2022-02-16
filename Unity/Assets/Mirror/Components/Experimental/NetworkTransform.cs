@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fa4e04a2a49b360eba154764e98aceddd863bcacec7e837c6da064670f0e763
-size 389
+﻿using UnityEngine;
+
+namespace Mirror.Experimental
+{
+    [DisallowMultipleComponent]
+    [AddComponentMenu("Network/Experimental/NetworkTransformExperimental")]
+    [HelpURL("https://mirror-networking.gitbook.io/docs/components/network-transform")]
+    public class NetworkTransform : NetworkTransformBase
+    {
+        protected override Transform targetTransform => transform;
+    }
+}

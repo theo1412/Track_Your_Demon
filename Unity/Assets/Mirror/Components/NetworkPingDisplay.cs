@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d57084da4fed973d5291bf53340bd6419371616f3d84dff899723f4f717023a2
-size 1098
+using System;
+using UnityEngine;
+
+namespace Mirror
+{
+    /// <summary>
+    /// Component that will display the clients ping in milliseconds
+    /// </summary>
+    [DisallowMultipleComponent]
+    [AddComponentMenu("Network/NetworkPingDisplay")]
+    [HelpURL("https://mirror-networking.gitbook.io/docs/components/network-ping-display")]
+    public class NetworkPingDisplay : MonoBehaviour
+    {
+        public Color color = Color.white;
+        public int padding = 2;
+        int width = 150;
+        int height = 25;
+
+        void OnGUI()
+        {
+            // only while client is active
+            if (!NetworkClient.active) return;
+
+            // show rtt in bottom right corner, right aligned
+            GUI.color = color;
+            Rect rect = new Rect(Screen.width - width - padding, Screen.height - height - padding, width, height);
+            GUIStyle style = GUI.skin.GetStyle("Label");
+            style.alignment = TextAnchor.MiddleRight;
+            GUI.Label(rect, $"RTT: {Math.Round(NetworkTime.rtt * 1000)}ms", style);
+            GUI.color = Color.white;
+        }
+    }
+}

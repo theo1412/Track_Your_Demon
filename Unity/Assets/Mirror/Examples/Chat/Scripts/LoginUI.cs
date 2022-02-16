@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7a38dd001e666de3bc3187b0147d8bf17e720e1f34e5918024a7682944d6ec3
-size 705
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Mirror.Examples.Chat
+{
+    public class LoginUI : MonoBehaviour
+    {
+        [Header("UI Elements")]
+        public InputField usernameInput;
+        public Button hostButton;
+        public Button clientButton;
+        public Text errorText;
+
+        public static LoginUI instance;
+
+        void Awake()
+        {
+            instance = this;
+        }
+
+        public void ToggleButtons(string username)
+        {
+            hostButton.interactable = !string.IsNullOrWhiteSpace(username);
+            clientButton.interactable = !string.IsNullOrWhiteSpace(username);
+        }
+    }
+}

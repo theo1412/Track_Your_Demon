@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1507f27ba08e9effb7599cd5384220028bdb9428eb4ae87944c56524bffc9212
-size 898
+﻿using UnityEngine;
+
+namespace Mirror.Experimental
+{
+    /// <summary>
+    /// A component to synchronize the position of child transforms of networked objects.
+    /// <para>There must be a NetworkTransform on the root object of the hierarchy. There can be multiple NetworkTransformChild components on an object. This does not use physics for synchronization, it simply synchronizes the localPosition and localRotation of the child transform and lerps towards the received values.</para>
+    /// </summary>
+    [AddComponentMenu("Network/Experimental/NetworkTransformChildExperimentalExperimental")]
+    [HelpURL("https://mirror-networking.gitbook.io/docs/components/network-transform-child")]
+    public class NetworkTransformChild : NetworkTransformBase
+    {
+        [Header("Target")]
+        public Transform target;
+
+        protected override Transform targetTransform => target;
+    }
+}

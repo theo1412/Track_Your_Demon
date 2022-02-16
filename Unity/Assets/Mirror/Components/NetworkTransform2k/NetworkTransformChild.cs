@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e046de589ee0d9c7f7a7b80e9b78132e0f85e43b2d00fded8277eba77e96909f
-size 634
+// A component to synchronize the position of child transforms of networked objects.
+// There must be a NetworkTransform on the root object of the hierarchy. There can be multiple NetworkTransformChild components on an object. This does not use physics for synchronization, it simply synchronizes the localPosition and localRotation of the child transform and lerps towards the recieved values.
+using UnityEngine;
+
+namespace Mirror
+{
+    public class NetworkTransformChild : NetworkTransformBase
+    {
+        [Header("Target")]
+        public Transform target;
+        protected override Transform targetComponent => target;
+    }
+}

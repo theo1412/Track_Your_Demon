@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43757895e70f21045840dba0774404b14105042245726681f038dc5df1e40b24
-size 1100
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Mirror;
+using UnityEngine.InputSystem;
+
+public class NewBehaviourScript : NetworkBehaviour
+{
+    [Header("References")]
+    [SerializeField] private CharacterController controller = null;
+    [SerializeField] private Animator animator = null;
+
+    [Header("Settings")]
+    [SerializeField] private float movementSpeed = 5f;
+
+    [ClientCallback]
+    private void Update()
+    {
+        if (!hasAuthority) { return; }
+
+        var movement = new Vector3();
+
+        if (Keyboard.current.wKey.isPressed) { movement.z += 1; }
+        if (Keyboard.current.sKey.isPressed) { movement.z -= 1; }
+        if (Keyboard.current.aKey.isPressed) { movement.x -= 1; }
+        if (Keyboard.current.dKey.isPressed) { movement.x += 1; }
+
+        controller.Move(movement * movementSpeed * Time.deltaTime);
+
+        if (controller.velocity.magnitude > 0.2f)
+        {
+            transform.rotation = Quaternion.LookRotation(movement);
+        }
+        animator.SetBool("IsWalking", controller.velocity.magnitude > 0.2f);
+    }
+
+}
