@@ -1,15 +1,27 @@
 ﻿<Properties StartupConfiguration="{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Théo/Selector/Scripts/CharacterSelect.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Wissame/Script/SettingsMenu.cs">
     <Files>
+<<<<<<< Updated upstream
       <File FileName="Assets/Théo/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" Line="1" Column="1" />
       <File FileName="Assets/Théo/Selector/Scripts/Character.cs" />
       <File FileName="Assets/Théo/Selector/Scripts/CharacterSelect.cs" Line="1" Column="1" />
+=======
+      <File FileName="Assets/Mirror/Runtime/NetworkClient.cs" Line="1083" Column="1" />
+      <File FileName="Assets/Théo/Selector/Scripts/Character.cs" />
+      <File FileName="Assets/Théo/Selector/Scripts/CharacterSelect.cs" />
+>>>>>>> Stashed changes
       <File FileName="Assets/Théo/Selector/Scripts/NewBehaviourScript.cs" />
+      <File FileName="Assets/Wissame/Script/SettingsMenu.cs" Line="46" Column="2" />
+      <File FileName="Assets/Wissame/Script/PauseMenu.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< Updated upstream
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="39bb80cd-621f-4f70-a02f-a72383663f86" />
+=======
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dfecc58c-b173-4a4f-913f-69d1a8c55046" />
+>>>>>>> Stashed changes
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

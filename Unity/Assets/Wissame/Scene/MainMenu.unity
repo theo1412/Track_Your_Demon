@@ -2244,7 +2244,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &1616915814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,6 +2533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c5527426c0c5f478cf5ffbe5ce7ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toggle: {fileID: 1565596226}
   resDropdown: {fileID: 667633193}
 --- !u!1 &1692523230
 GameObject:

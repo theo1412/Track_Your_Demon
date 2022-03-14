@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Th\xE9o/Selector/Scene/Scene_CharacterSelection.unity"
+    path: Assets/Wissame/Scene/MainMenu.unity
+    guid: 527ab54c18d998447bf08d1599344983
+  - enabled: 1
+    path: "Assets/The\u0301o/Selector/Scene/Scene_CharacterSelection.unity"
     guid: 2acd235822c604ce7a5739f7ce4c2928
   m_configObjects: {}

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
     Resolution[] resolutions;
+    public Toggle toggle;
     public Dropdown resDropdown;
     private void Start()
     {
@@ -40,6 +41,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetFullscreen()
     {
-        Screen.fullScreen = !Screen.fullScreen;
+        Screen.fullScreen = toggle.isOn;
     }
 }
